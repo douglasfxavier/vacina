@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<canvas id=vacina width="1000px" height="1000px">
+		
+	</canvas>
+	<script type="text/javascript">
+			var canvas = document.getElementById("vacina");
+			var contexto = canvas.getContext("2d");
+			contexto.beginPath();
+			contexto.rect(50, 50, 500, 150);
+			contexto.stroke();	
+
+			contexto.moveTo(550,125);
+			contexto.lineTo(700,125);
+			contexto.stroke();
+	</script>
+
+</body>
+</html>
