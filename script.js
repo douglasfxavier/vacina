@@ -1,8 +1,6 @@
 function seringa() {
     var canvas = document.getElementById('vacina');
     var ctx = canvas.getContext('2d');
-
-    texto = document.getElementById('ano').innerHTML
     
     ctx.beginPath();
 	ctx.rect(150, 50, 500, 150);
@@ -22,14 +20,12 @@ function seringa() {
     
 	var grd = ctx.createLinearGradient(0, 0, 200, 0);
 	grd.addColorStop(0, "white");
-	grd.addColorStop(1, "#00FF7F");
+	grd.addColorStop(1, "#40E0D0");
 
 	ctx.fillStyle = grd;
-	ctx.fillRect(150, 50, 500, 150);
+	ctx.fillRect(300, 50, 350, 150);
 
-	ctx.font = "16px Arial";
-    ctx.fillStyle = "#000000"
-	ctx.fillText(texto, 160, 160);
+	
 
 
     ctx.moveTo(650,125);
@@ -116,4 +112,16 @@ function seringa() {
 
     
 
+}
+
+function escrever() {
+	var canvas = document.getElementById('vacina');
+    var ctx = canvas.getContext('2d');
+
+    texto = document.getElementById('ano').innerHTML
+
+	ctx.font = "16px Arial";
+    ctx.fillStyle = "#000000"
+    // ctx.rotate(20 * Math.PI / 90);
+	ctx.fillText(texto, 160, 160);
 }
