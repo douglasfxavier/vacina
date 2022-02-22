@@ -19,16 +19,18 @@ function seringa() {
 	ctx.lineTo(60,190);
 	ctx.stroke();
 
-    ctx.font = "16px Arial";
-    ctx.textBaseLine = "alphabetic"
+    
+	var grd = ctx.createLinearGradient(0, 0, 200, 0);
+	grd.addColorStop(0, "white");
+	grd.addColorStop(1, "#00FF7F");
+
+	ctx.fillStyle = grd;
+	ctx.fillRect(150, 50, 500, 150);
+
+	ctx.font = "16px Arial";
+    ctx.fillStyle = "#000000"
 	ctx.fillText(texto, 160, 160);
 
-	// var grd = ctx.createLinearGradient(0, 0, 200, 0);
-	// grd.addColorStop(0, "white");
-	// grd.addColorStop(1, "#00FF7F");
-
-	// ctx.fillStyle = grd;
-	// ctx.fillRect(150, 50, 500, 150);
 
     ctx.moveTo(650,125);
 	ctx.lineTo(800,125);
