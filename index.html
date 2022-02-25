@@ -5,36 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<script src="script.js"></script>
-	<style type="text/css">
-		body {
-			background-image: linear-gradient(to bottom right, white, #7FFFD4);
-		}
-		#vacina{
-			background-image: linear-gradient(to bottom right, white, #7FFFD4);
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
 
 </head>
 <body>
-	<header>
-		<p></p>
+
+	<header class="cabecalho">
+
+		<h1 class="cabecalho-itens">Linha do Tempo das Vacinas</h1>
+		<h1 class="cabecalho-itens">IFPB - Campus Itaporanga</h1>
+		
 	</header>
+
 	<main>
 		<script type="text/javascript" src="script.js"></script>
+		
+		
+		<center><canvas id=vacina width="1000px" height="400px">
 
-	
-
-	
-		<center><canvas id=vacina width="1000px" height="1000px">
 			<p id = "ano">1796</p>
+
 		</canvas></center>
 
-	<script>
-	seringa();
-	escrever();
-	</script>
+		<script>
+		
+
+		seringa();
+		escrever();	
+
+
+		
+		</script>
 	</main>
-	
 
 </body>
 </html>

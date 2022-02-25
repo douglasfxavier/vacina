@@ -1,16 +1,23 @@
+
 function seringa() {
-    var canvas = document.getElementById('vacina');
-    var ctx = canvas.getContext('2d');
-    
-    ctx.beginPath();
+	var canvas = document.getElementById('vacina');
+	var ctx = canvas.getContext('2d');
+
+	ctx.beginPath();
 	ctx.rect(150, 50, 500, 150);
 	ctx.stroke();
+
+	
     ctx.moveTo(650,125);
 	ctx.lineTo(800,125);
 	ctx.stroke();
 
-    ctx.moveTo(60, 125);
-	ctx.lineTo(150,125);
+    ctx.moveTo(60, 100);
+	ctx.lineTo(150,100);
+	ctx.stroke();
+
+	ctx.moveTo(60, 150);
+	ctx.lineTo(150,150);
 	ctx.stroke();
 
 	ctx.moveTo(60, 60);
@@ -23,18 +30,17 @@ function seringa() {
 	grd.addColorStop(1, "#40E0D0");
 
 	ctx.fillStyle = grd;
-	ctx.fillRect(300, 50, 350, 150);
+	ctx.fillRect(150, 50, 500, 150);
 
-	
 
 
     ctx.moveTo(650,125);
 	ctx.lineTo(800,125);
 	ctx.stroke();
 
-	ctx.moveTo(60, 125);
-    ctx.lineTo(150,125);
-	ctx.stroke();
+	// ctx.moveTo(60, 125);
+    // ctx.lineTo(150,125);
+	// ctx.stroke();
 
 	ctx.moveTo(60, 60);
 	ctx.lineTo(60,190);
@@ -116,12 +122,13 @@ function seringa() {
 
 function escrever() {
 	var canvas = document.getElementById('vacina');
-    var ctx = canvas.getContext('2d');
-
-    texto = document.getElementById('ano').innerHTML
-
-	ctx.font = "16px Arial";
-    ctx.fillStyle = "#000000"
-    // ctx.rotate(20 * Math.PI / 90);
-	ctx.fillText(texto, 160, 160);
+	var ctx = canvas.getContext('2d');
+	
+	texto = document.getElementById('ano').innerHTML
+	
+	ctx.rotate(90 * Math.PI / 180);
+	ctx.fillStyle = "#000000"
+    ctx.font = "16px times";
+    ctx.fillText(texto, 150 , -165);
+    ctx.restore()
 }
