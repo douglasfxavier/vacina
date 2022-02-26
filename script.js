@@ -3,26 +3,40 @@ function seringa() {
 	var canvas = document.getElementById('vacina');
 	var ctx = canvas.getContext('2d');
 
-	ctx.beginPath();
-	ctx.rect(150, 50, 500, 150);
-	ctx.stroke();
+	// ctx.beginPath();
+	// ctx.fillStyle = "#C1CDCD";
+	// ctx.fillRect(140, 40, 520, 170);
+	// ctx.stroke();
 
 	
-    ctx.moveTo(650,125);
-	ctx.lineTo(800,125);
-	ctx.stroke();
+    // ctx.moveTo(650,125);
+	// ctx.lineTo(800,125);
+	// ctx.stroke();
 
-    ctx.moveTo(60, 100);
-	ctx.lineTo(150,100);
-	ctx.stroke();
+    // ctx.moveTo(60, 100);
+	// ctx.lineTo(150,100);
+	// ctx.stroke();
 
-	ctx.moveTo(60, 150);
-	ctx.lineTo(150,150);
-	ctx.stroke();
+	// ctx.moveTo(60, 150);
+	// ctx.lineTo(150,150);
+	// ctx.stroke();
 
-	ctx.moveTo(60, 60);
-	ctx.lineTo(60,190);
-	ctx.stroke();
+	// ctx.moveTo(60, 60);
+	// ctx.lineTo(60,190);
+	// ctx.stroke();
+
+	ctx.fillStyle = "#C1CDCD";
+	ctx.fillRect(50, 50, 20, 150);
+	
+
+	
+
+
+	ctx.fillStyle = "#C1CDCD";
+	ctx.fillRect(70, 100, 80, 50);
+
+
+
 
     
 	var grd = ctx.createLinearGradient(0, 0, 200, 0);
@@ -30,21 +44,25 @@ function seringa() {
 	grd.addColorStop(1, "#40E0D0");
 
 	ctx.fillStyle = grd;
-	ctx.fillRect(150, 50, 500, 150);
+	ctx.fillRect(155, 55, 490, 145);
 
 
-
-    ctx.moveTo(650,125);
-	ctx.lineTo(800,125);
+	ctx.fillStyle = "#C1CDCD";
+	ctx.fillRect(650, 120, 150, 10);
 	ctx.stroke();
+
+
+    // ctx.moveTo(650,125);
+	// ctx.lineTo(800,125);
+	// ctx.stroke();
 
 	// ctx.moveTo(60, 125);
     // ctx.lineTo(150,125);
 	// ctx.stroke();
 
-	ctx.moveTo(60, 60);
-	ctx.lineTo(60,190);
-	ctx.stroke();
+	// ctx.moveTo(60, 60);
+	// ctx.lineTo(60,190);
+	// ctx.stroke();
 
 	ctx.moveTo(170, 140);
 	ctx.lineTo(170,70);
@@ -116,7 +134,23 @@ function seringa() {
 	ctx.lineTo(490, 70);
 	ctx.stroke();
 
-    
+    ctx.beginPath();
+    ctx.arc(60, 200, 10, 0, Math.PI*1);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(60, 50, 10, 10, Math.PI*1);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(800, 125, 5, 10, Math.PI*1);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(60, 100, 5, 10, Math.PI*1);
+    ctx.fill();
+
+
 
 }
 

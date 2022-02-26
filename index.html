@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<script src="script.js"></script>
+	<script src="scriptTeste.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
 
@@ -20,6 +21,8 @@
 
 	<main>
 		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="scriptTeste.js"></script>
+
 		
 		
 		<center><canvas id=vacina width="1000px" height="400px">
@@ -30,12 +33,41 @@
 
 		<script>
 		
+			seringa();
 
-		seringa();
-		escrever();	
+		function draw() {
+			var canvas = document.getElementById('vacina');
+			if (canvas.getContext){
+				var ctx = canvas.getContext('2d');
 
+				roundedRect(ctx,150,50,500,150,26);
+				
+				}
+			}
 
-		
+			// Uma função útil para desenhar um retângulo com cantos arredondados.
+
+			function roundedRect(ctx,x,y,width,height,radius){
+				
+				ctx.beginPath();
+				ctx.strokeStyle = "#C1CDCD";
+				ctx.lineWidth = 10;
+				ctx.lineCap = "butt";
+				ctx.moveTo(x,y+radius);
+				ctx.lineTo(x,y+height-radius);
+				ctx.quadraticCurveTo(x,y+height,x+radius,y+height);
+				ctx.lineTo(x+width-radius,y+height);
+				ctx.quadraticCurveTo(x+width,y+height,x+width,y+height-radius);
+				ctx.lineTo(x+width,y+radius);
+				ctx.quadraticCurveTo(x+width,y,x+width-radius,y);
+				ctx.lineTo(x+radius,y);
+				ctx.quadraticCurveTo(x,y,x,y+radius);
+				
+				ctx.stroke();
+			}
+
+		draw();
+		escrever();
 		</script>
 	</main>
 
