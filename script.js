@@ -3,166 +3,107 @@ function seringa() {
 	var canvas = document.getElementById('vacina');
 	var ctx = canvas.getContext('2d');
 
-	// ctx.beginPath();
-	// ctx.fillStyle = "#C1CDCD";
-	// ctx.fillRect(140, 40, 520, 170);
-	// ctx.stroke();
-
-	
-    // ctx.moveTo(650,125);
-	// ctx.lineTo(800,125);
-	// ctx.stroke();
-
-    // ctx.moveTo(60, 100);
-	// ctx.lineTo(150,100);
-	// ctx.stroke();
-
-	// ctx.moveTo(60, 150);
-	// ctx.lineTo(150,150);
-	// ctx.stroke();
-
-	// ctx.moveTo(60, 60);
-	// ctx.lineTo(60,190);
-	// ctx.stroke();
-
 	ctx.fillStyle = "#C1CDCD";
 	ctx.fillRect(50, 50, 20, 150);
 	
-
-	
-
-
 	ctx.fillStyle = "#C1CDCD";
 	ctx.fillRect(70, 100, 80, 50);
 
-
-
-
-    
-	var grd = ctx.createLinearGradient(0, 0, 200, 0);
-	grd.addColorStop(0, "white");
-	grd.addColorStop(1, "#40E0D0");
-
-	ctx.fillStyle = grd;
+	ctx.fillStyle = "#40E0D0";
 	ctx.fillRect(155, 55, 490, 145);
-
 
 	ctx.fillStyle = "#C1CDCD";
 	ctx.fillRect(650, 120, 150, 10);
-	ctx.stroke();
-
-
-    // ctx.moveTo(650,125);
-	// ctx.lineTo(800,125);
-	// ctx.stroke();
-
-	// ctx.moveTo(60, 125);
-    // ctx.lineTo(150,125);
-	// ctx.stroke();
-
-	// ctx.moveTo(60, 60);
-	// ctx.lineTo(60,190);
-	// ctx.stroke();
-
-	ctx.moveTo(170, 140);
-	ctx.lineTo(170,70);
-	ctx.stroke();
-
-		
-
-	ctx.moveTo(190, 130);
-	ctx.lineTo(190,80);
-	ctx.stroke();
-
-	ctx.moveTo(210, 130);
-	ctx.lineTo(210,80);
-	ctx.stroke();
-
-	ctx.moveTo(230, 130);
-	ctx.lineTo(230,80);
-	ctx.stroke();
-
-	ctx.moveTo(250, 140);
-	ctx.lineTo(250,70);
-	ctx.stroke();
-
-	ctx.moveTo(270, 130);
-	ctx.lineTo(270,80);
-	ctx.stroke();
-
-	ctx.moveTo(290, 130);
-	ctx.lineTo(290,80);
-	ctx.stroke();
-
-	ctx.moveTo(310, 130);
-	ctx.lineTo(310,80);
-	ctx.stroke();
-		
-	ctx.moveTo(330, 140);
-	ctx.lineTo(330,70);
-	ctx.stroke();
-
-	ctx.moveTo(350, 130);
-	ctx.lineTo(350,80);
-	ctx.stroke();
-
-	ctx.moveTo(370, 130);
-	ctx.lineTo(370,80);
-	ctx.stroke();
-
-	ctx.moveTo(390, 130);
-	ctx.lineTo(390,80);
-	ctx.stroke();
-		
-	ctx.moveTo(410, 140);
-	ctx.lineTo(410,70);
-	ctx.stroke();
-
-	ctx.moveTo(430, 130);
-	ctx.lineTo(430,80);
-	ctx.stroke();
-
-	ctx.moveTo(450, 130);
-	ctx.lineTo(450,80);
-	ctx.stroke();
-
-	ctx.moveTo(470, 130);
-	ctx.lineTo(470,80);
-	ctx.stroke();
-
-	ctx.moveTo(490, 140);
-	ctx.lineTo(490, 70);
-	ctx.stroke();
-
-    ctx.beginPath();
-    ctx.arc(60, 200, 10, 0, Math.PI*1);
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.arc(60, 50, 10, 10, Math.PI*1);
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.arc(800, 125, 5, 10, Math.PI*1);
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.arc(60, 100, 5, 10, Math.PI*1);
-    ctx.fill();
-
-
 
 }
+function draw() {
+	var canvas = document.getElementById('vacina');
+	if (canvas.getContext){
+		var ctx = canvas.getContext('2d');
 
+		linha(ctx,170, 140, 170,70);
+		linha(ctx,190, 130, 190,80);
+		linha(ctx,210, 130, 210,80);
+		linha(ctx,230, 130, 230,80);
+		linha(ctx,250, 140, 250,70);
+
+		linha(ctx,270, 130, 270,80);
+		linha(ctx,290, 130, 290,80);
+		linha(ctx,310, 130, 310,80);
+		linha(ctx,330, 140, 330,70);
+		linha(ctx,350, 130, 350,80);
+		linha(ctx,370, 130, 370,80);
+
+		linha(ctx,390, 130, 390,80);
+		linha(ctx,410, 140, 410,70);
+		linha(ctx,430, 130, 430,80);
+		linha(ctx,450, 130, 450,80);
+
+		linha(ctx,470, 130, 470,80);
+		linha(ctx,490, 140, 490, 70);
+
+
+
+
+
+		circulos(ctx,60, 200, 10, 0);
+		circulos(ctx,60, 50, 10, 10);
+	
+		
+		roundedRect(ctx,150,50,500,150,26);
+		
+		
+		}
+	}
+
+//função para escrever no canvas
 function escrever() {
 	var canvas = document.getElementById('vacina');
 	var ctx = canvas.getContext('2d');
 	
 	texto = document.getElementById('ano').innerHTML
 	
-	ctx.rotate(90 * Math.PI / 180);
+	ctx.rotate(-90 * Math.PI / 180);
 	ctx.fillStyle = "#000000"
     ctx.font = "16px times";
-    ctx.fillText(texto, 150 , -165);
+    ctx.fillText(texto, -185 , 175);
     ctx.restore()
+}
+
+//função para desenhar linhas no canvas
+function linha(ctx, AntX, AntY, x, y) {
+
+	ctx.moveTo(AntX, AntY);
+	ctx.lineTo(x,y);
+	ctx.stroke();
+
+}
+
+//função para desenhar circulos no canvas
+function circulos(ctx,x,y,r,sAngle) {
+
+	ctx.beginPath();
+    ctx.arc(x, y, r, sAngle, Math.PI*1);
+    ctx.fill();
+
+}
+
+//função para desenhar retangulos com pontas arredondadas
+function roundedRect(ctx,x,y,width,height,radius){
+				
+	ctx.beginPath();
+	ctx.strokeStyle = "#C1CDCD";
+	ctx.lineWidth = 10;
+	ctx.lineCap = "butt";
+	ctx.moveTo(x,y+radius);
+	ctx.lineTo(x,y+height-radius);
+	ctx.quadraticCurveTo(x,y+height,x+radius,y+height);
+	ctx.lineTo(x+width-radius,y+height);
+	ctx.quadraticCurveTo(x+width,y+height,x+width,y+height-radius);
+	ctx.lineTo(x+width,y+radius);
+	ctx.quadraticCurveTo(x+width,y,x+width-radius,y);
+	ctx.lineTo(x+radius,y);
+	ctx.quadraticCurveTo(x,y,x,y+radius);
+	
+	ctx.stroke();
 }

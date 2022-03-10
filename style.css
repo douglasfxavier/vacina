@@ -1,24 +1,77 @@
 body { 
-    /* background-image: linear-gradient(to bottom right, #7FFFD4, #506175); */
+    margin: 0%;
     background-repeat: no-repeat;
+  
 }
-#vacina{
-    /* background-image: linear-gradient(to bottom right, #7FFFD4, #506175 ); */
-}
+
 
 .cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     justify-content: space-around;
+    background-color: #40E0D0;
+    background-image: linear-gradient(to right, #40E0D0 , #aefff7);
+    font-family: 'Fredoka', sans-serif;
       
     
    
 }
 
-.cabecalho-itens {
-  
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: small;
+.main-text {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.titulo-seringa {
+    margin-left: 10%;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.ONegocioQueEsterPediu {
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+    justify-content: space-evenly;
+    margin-top: 45px;
+
+}
+
+.ONegocioQueEsterPediu-1 {
+    background-color: #EEE0E5;
+    width: 300px;
+    height: 400px;  
+    border-radius: 20px;
+}
+.ONegocioQueEsterPediu-2 {
+    background-color: #EEE0E5;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+.ONegocioQueEsterPediu-3{
+    background-color: #EEE0E5;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.rodape {
+    display: flex;
+    background-color: #C1CDCD;
+    height: 300px;
+    align-items: row;
+    
+    
+
+}
+.rodape-itens {
+
+    margin-left: 20px;
+    gap: 20px;
+    margin-top: 20px;
 
 }

@@ -12,64 +12,56 @@
 </head>
 <body>
 
-	<header class="cabecalho">
-
-		<h1 class="cabecalho-itens">Linha do Tempo das Vacinas</h1>
-		<h1 class="cabecalho-itens">IFPB - Campus Itaporanga</h1>
+	<header>
+		<nav class="cabecalho">
+			<H1>Pagina Inicial</H1>
+		</nav>
+		
 		
 	</header>
 
 	<main>
 		<script type="text/javascript" src="script.js"></script>
-		<script type="text/javascript" src="scriptTeste.js"></script>
 
-		
-		
-		<center><canvas id=vacina width="1000px" height="400px">
+		<h2 class="titulo-seringa">Linha do tempo das vacinas</h2>
+
+		<center><canvas id=vacina width="800px" height="300px">
 
 			<p id = "ano">1796</p>
 
 		</canvas></center>
 
 		<script>
-		
-			seringa();
-
-		function draw() {
-			var canvas = document.getElementById('vacina');
-			if (canvas.getContext){
-				var ctx = canvas.getContext('2d');
-
-				roundedRect(ctx,150,50,500,150,26);
-				
-				}
-			}
-
-			// Uma função útil para desenhar um retângulo com cantos arredondados.
-
-			function roundedRect(ctx,x,y,width,height,radius){
-				
-				ctx.beginPath();
-				ctx.strokeStyle = "#C1CDCD";
-				ctx.lineWidth = 10;
-				ctx.lineCap = "butt";
-				ctx.moveTo(x,y+radius);
-				ctx.lineTo(x,y+height-radius);
-				ctx.quadraticCurveTo(x,y+height,x+radius,y+height);
-				ctx.lineTo(x+width-radius,y+height);
-				ctx.quadraticCurveTo(x+width,y+height,x+width,y+height-radius);
-				ctx.lineTo(x+width,y+radius);
-				ctx.quadraticCurveTo(x+width,y,x+width-radius,y);
-				ctx.lineTo(x+radius,y);
-				ctx.quadraticCurveTo(x,y,x,y+radius);
-				
-				ctx.stroke();
-			}
-
-		draw();
-		escrever();
+			seringa();			
+			draw();
+			escrever();
 		</script>
+
+		<div class="main-text">
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nesciunt. Quisquam sed reprehenderit nostrum voluptates, culpa facere aliquid inventore tenetur sequi odit quos architecto illo quis suscipit laboriosam autem reiciendis? 
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores praesentium fugiat eligendi eos, soluta eaque esse earum itaque maxime laudantium! Laborum corporis expedita molestias consequuntur quas ducimus quasi autem accusantium.
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, magnam officiis expedita iste temporibus sed provident eaque assumenda placeat sit, in illo quo praesentium quod quas? Hic dolorum atque eveniet.</p>
+
+		</div>
+
+		<div class="ONegocioQueEsterPediu">
+			<div class="ONegocioQueEsterPediu-1"></div>
+
+			<div class="ONegocioQueEsterPediu-2"></div>
+
+			<div class="ONegocioQueEsterPediu-3"></div>
+		</div>
+
 	</main>
+	<footer class="rodape">
+
+		<img class="rodape-itens" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/200px-Logotipo_IFET.svg.png" alt="Logo IFPB" width="50" height="68">
+		
+		<p class="rodape-itens">IFPB - Campus Itaporanga</p>
+		
+		
+	</footer>
+	
 
 </body>
 </html>
