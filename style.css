@@ -37,7 +37,10 @@ main {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    text-align: 'justify;';
+    text-align: justify;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+
 }
 .mainText { 
     margin-left: 10%;      
@@ -46,6 +49,7 @@ main {
     line-height: 1.5;
     text-align: justify;
     width: 500pt;
+    margin-top: 20pt;
 }
 
 .imagemSeringa {
