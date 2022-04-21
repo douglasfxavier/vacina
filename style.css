@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
 body { 
-    margin: 0%;
+    margin: 15%;
     background-repeat: no-repeat;
   
 }
@@ -7,17 +9,15 @@ body {
 .cabecalho {
     display: flex;
     flex-direction: row;   
-    justify-content: flex-start;
-    background-color: #40E0D0;
-    background-image: linear-gradient(to right, #40E0D0 , #aefff7);
-    column-gap: 300pt;
-    right: 25px;
+    align-items: center;
+
+    
    
 }
 
-.cabecalho-itens {
+.cabecalho-text {
     
-    font-family: 'Roboto Slab', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     margin-left: 30pt;  
 }
 
@@ -32,14 +32,20 @@ main {
     column-gap: 5%;
 }
 
-.mainText { 
+.descricao-site {
     margin-left: 10%;      
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     line-height: 1.5;
     text-align: 'justify;';
-    width: 500pt;
+}
+.mainText { 
+    margin-left: 10%;      
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
     text-align: justify;
+    width: 500pt;
 }
 
 .imagemSeringa {

@@ -21,6 +21,9 @@ function draw() {
 	if (canvas.getContext){
 		var ctx = canvas.getContext('2d');
 
+		ano1 = document.getElementById('1796').innerHTML
+		ano2 = document.getElementById('1955').innerHTML
+
 		linha(ctx,170, 140, 170,70);
 		linha(ctx,190, 130, 190,80);
 		linha(ctx,210, 130, 210,80);
@@ -41,6 +44,14 @@ function draw() {
 
 		linha(ctx,470, 130, 470,80);
 		linha(ctx,490, 140, 490, 70);
+		linha(ctx,510, 130, 510, 80);
+		linha(ctx,530, 130, 530, 80);
+		linha(ctx,550, 130, 550, 80);
+		linha(ctx,570, 140, 570, 70);
+
+		linha(ctx,590, 130, 590, 80);
+		linha(ctx,610, 130, 610, 80);
+		linha(ctx,630, 130, 630, 80);
 
 
 
@@ -52,22 +63,25 @@ function draw() {
 		
 		roundedRect(ctx,150,50,500,150,26);
 		
-		
+		escrever(ctx, ano2, 145, -245)
+		escrever(ctx, ano2, -175, 185)
 		}
 	}
 
 //função para escrever no canvas
-function escrever() {
-	var canvas = document.getElementById('vacina');
-	var ctx = canvas.getContext('2d');
+function escrever(ctx, texto, posX, posY) {
 	
-	texto = document.getElementById('ano').innerHTML
-	
-	ctx.rotate(-90 * Math.PI / 180);
+	ctx.rotate(90 * Math.PI / 180);
 	ctx.fillStyle = "#000000"
     ctx.font = "16px times";
-    ctx.fillText(texto, -185 , 175);
-    ctx.restore()
+    ctx.fillText(texto, posX , posY);
+
+
+	// ctx.rotate(-90 * Math.PI / 180);
+	// ctx.fillStyle = "#000000"
+    // ctx.font = "16px times";
+    // ctx.fillText(ano2, -185 , 185);
+    // ctx.restore()
 }
 
 //função para desenhar linhas no canvas
