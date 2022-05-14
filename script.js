@@ -68,6 +68,9 @@ function draw() {
 		}
 	}
 
+
+
+
 //função para escrever no canvas
 function escrever(ctx, texto, posX, posY) {
 	
@@ -75,13 +78,9 @@ function escrever(ctx, texto, posX, posY) {
 	ctx.fillStyle = "#000000"
     ctx.font = "16px times";
     ctx.fillText(texto, posX , posY);
+	
 
 
-	// ctx.rotate(-90 * Math.PI / 180);
-	// ctx.fillStyle = "#000000"
-    // ctx.font = "16px times";
-    // ctx.fillText(ano2, -185 , 185);
-    // ctx.restore()
 }
 
 //função para desenhar linhas no canvas

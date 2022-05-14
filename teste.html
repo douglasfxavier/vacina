@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style>
+  body {
+    background-color: aqua;
+    padding: 20pt;
+  }
+  .all {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20pt;
+    
+  }
+  .seringa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10%;
+    margin-block: 10pt;
+  }
+
+  .retangulo {
+      background-color: #C1CDCD;
+      width: 340pt;
+      height: 180pt;
+      /* margin-bottom: 30px; */
+  }
+  .texto {
+      display: flex;
+      flex-direction: column;
+      margin-inline-end: 8pt;
+      gap: 10pt;
+
+  }
+  .linhas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline-start: 8pt;
+      gap: 15pt;
+      /* writing-mode: vertical-rl; */
+  }
+  .linha {
+      height: 2px;
+      width: 30px;
+      background-color: black;
+  }
+  #linha-maior {
+      height: 2px;
+      width: 40px;
+      background-color: black;
+  }
+  #tubo {
+      border-radius: 25pt;
+      width: 55pt;
+      height: 280pt;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      background-color: #40E0D0;
+      border-width: 10pt;
+      border-style: solid;
+      border-color: #C1CDCD;
+      justify-content: center;
+      padding: 10pt;
+      gap: 10pt;
+  }
+
+  #agulha {
+      width: 10pt;
+      height: 60pt;
+      border-top-right-radius: 40pt;
+  }
+  #puxador-1 {
+      height: 30pt;
+      width: 15pt;   
+  }
+  #puxador-2 {
+      width: 60pt;
+      height: 10pt;
+      border-radius: 40pt;
+  }
+
+
+
+</style>
+<body style="text-align:center;">
+
+  <div class="all">
+    <div class="seringa">
+      <div class="retangulo" id="agulha"></div>
+      <div class="retangulo" id="tubo">
+        <div class="linhas">
+          
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <!-- <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div> -->
+          <!-- <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div>
+          <div class="linha"></div>
+          <div class="linha" id="linha-maior"></div> -->
+          <div class="linha"></div>
+        </div>
+        
+        <div class="texto" >
+          <div id="ano">1771</div>
+          <div id="ano">1804</div>
+          <div id="ano">1927</div>
+          <div id="ano">1930</div>
+          <div id="ano">1942</div>
+          <div id="ano">1955</div>
+          <div id="ano">1980</div>
+          <div id="ano">1990</div>
+          <div id="ano">1995</div>
+          <div id="ano">1999</div>
+          <div id="ano">2021</div>
+        </div>
+      </div>
+      
+      <div class="retangulo" id="puxador-1"></div>
+      <div class="retangulo" id="puxador-2"></div>
+      
+    </div>
+  </div>
+</div>
+
+  
+
+</body>
+</html>
+
+
+

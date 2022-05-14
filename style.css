@@ -1,70 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+body {
+    background-color: aqua;
+    padding: 20pt;
+}
+.all {
+background-color: aliceblue;
+display: flex;
+justify-content: flex-end;
+border-radius: 20pt;
 
-body { 
-    margin: 15%;
-    background-repeat: no-repeat;
-  
+}
+.seringa {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-inline: 10%;
+margin-block: 10pt;
 }
 
-.cabecalho {
+.retangulo {
+    background-color: #C1CDCD;
+    width: 340pt;
+    height: 180pt;
+    /* margin-bottom: 30px; */
+}
+.texto {
     display: flex;
-    flex-direction: row;   
+    flex-direction: column;
+    margin-inline-end: 8pt;
+    gap: 10pt;
+
+}
+.linhas {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
-    
-   
+    margin-inline-start: 8pt;
+    gap: 15pt;
+    /* writing-mode: vertical-rl; */
 }
-
-.cabecalho-text {
-    
-    font-family: 'PT Sans Narrow', sans-serif;
-    margin-left: 30pt;  
+.linha {
+    height: 2px;
+    width: 30px;
+    background-color: black;
 }
-
-.titulo-seringa {
-    
-    font-family: 'Roboto Slab', serif;
-    font-size: 20pt;
+#linha-maior {
+    height: 2px;
+    width: 40px;
+    background-color: black;
 }
-main {
+#tubo {
+    border-radius: 25pt;
+    width: 55pt;
+    height: 280pt;
     display: flex;
     flex-direction: row;
-    column-gap: 5%;
+    align-items: flex-start;
+    background-color: #40E0D0;
+    border-width: 10pt;
+    border-style: solid;
+    border-color: #C1CDCD;
+    justify-content: center;
+    padding: 10pt;
+    gap: 10pt;
 }
 
-.descricao-site {
-    margin-left: 10%;      
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
-    margin-top: 20pt;
-    margin-bottom: 20pt;
-
+#agulha {
+    width: 10pt;
+    height: 60pt;
+    border-top-right-radius: 40pt;
 }
-.mainText { 
-    margin-left: 10%;      
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 500pt;
-    margin-top: 20pt;
+#puxador-1 {
+    height: 30pt;
+    width: 15pt;   
 }
-
-.imagemSeringa {
-    margin-right: 10%;
-}
-.tituloSeringa {
-    margin-left: 10%;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.rodape-itens {
-
-    margin-left: 20px;
-    gap: 20px;
-    margin-top: 20px;
-
+#puxador-2 {
+    width: 60pt;
+    height: 10pt;
+    border-radius: 40pt;
 }
 
