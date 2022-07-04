@@ -1,6 +1,9 @@
 body {
     background-color: aqua;
     padding-inline: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .all {
