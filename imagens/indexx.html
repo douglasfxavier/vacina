@@ -63,7 +63,17 @@
             justify-content: center;
             flex-direction: column;
         }
+
         .section {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+        }
+        .section-main {
+            margin-top: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -73,9 +83,13 @@
 
 
         }
-         
-        </style>
-    
+        .header  {
+
+            margin: 0;
+
+        }        
+    </style>
+            
 </head>
 <body >
 
@@ -85,7 +99,9 @@
             <a href=https://techteacher.com.br><img class=logo src=logo.png alt="logo TechTeacher - IFPB" width="150" height="80"></a>
         
     </header>
-    <div class="section" id="section-one">
+    <section class="section">
+        
+        <div id="section-main">
 
         <h1>Vacinas</h1>
 
@@ -95,6 +111,8 @@
 
         </div>
     </div>
+    </section>
+
     
     
         
