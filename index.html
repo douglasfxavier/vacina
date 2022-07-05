@@ -1,106 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<script src="script.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Mono:wght@300&display=swap');
+        body {
+            color: #363636;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+            /* Text Link Color */
+        a, 
+        .section.works .filters label {
+            color: #363636;
+        }
+        
+            /* Heading Color */
+        .section.started .started-content .h-title, 
+        h1, 
+        h2, 
+        h3, 
+        h4, 
+        h5, 
+        h6 {
+            color: #000000;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+            /* Section Title Color */
+        .texto {
+            color: #141414;
+            font-family: 'Nunito', sans-serif;
+            text-align: center;
+            margin-inline: 7%;
 
+        }
+        
+            /* Background Color */
+        body, 
+        .container .line {
+            background: #40E0D0;
+        }
+        .container {
+            background: #fcfcfd;
+            width: 95vw;
+            height: 90vh;
+            margin: 10pt;
+            padding: 0.5%;
+            border-radius: 15pt;
+
+
+        }
+
+        .container div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+        }
+
+        .section {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+            overflow: auto;
+          
+        }
+        .section-main {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-inline: 10%;
+            justify-content: flex-end;
+            
+
+
+        }
+        .header  {
+
+            margin: 0;
+
+        }
+
+		#btn_vacinas {
+			margin: 15pt;
+			border-color: #40E0D0;
+			border-style: solid;
+			border-width: 2pt;
+			background-color: transparent;
+			border-radius: 15pt;
+			padding: 6pt;
+		}
+        
+    </style>
+            
 </head>
-<body>
-	<body style="text-align:center;">
+<body >
 
-		<div class="all">
-			<div class="conteudo">
-				<div id="texto-inicio">
-					<p>As vacinas são um dos meios mais seguros de nos protegermos contra várias doenças. É importante frisar que as vacinas são feitas a partir de partículas do próprio agente, que na maioria das vezes estão em sua fase inativa(morta). No momento em que o nosso organismo percebe esses vírus ou bactérias, nosso sistema imunológico(defesa) entra em ação e logo reage com o objetivo de parar o ato desses indivíduos desconhecidos. A função das vacinas é se passarem por esses agentes infecciosos com o intuito de instigar a produção de nossa defesa, através de anticorpos contra o "opositor". Assim, o nosso organismo aprende a se defender de forma ativa.</p>
 
-					<p>Quando o ataque acontece de verdade, a defesa é ativada por meio do nosso sistema imunológico. E assim faz com que os anticorpos combatam a doença para ser eliminada de vez ou muito limitada, impedindo que a doença se instaure.</p>
-				</div>
-					
-			</div>
-		  <div class="seringa">
-			<div class="retangulo" id="agulha"></div>
-			<div class="retangulo" id="tubo">
-			  <div class="linhas">
+    
+    <div class=container>
+    <header class=header>   
+            <a href=https://techteacher.com.br><img class=logo src=imagens/logo.png alt="logo TechTeacher - IFPB" width="150" height="80"></a>     
+    </header>
+    <section class="section">
+        
+        
+            <div id="section-main">
+           
+
+
+                <h1>Vacinas</h1>
+
+                <div class="texto" >
+                    <p>As vacinas são um dos meios mais seguros de nos protegermos contra várias doenças. É importante frisar que as vacinas são feitas a partir de partículas do próprio agente, que na maioria das vezes estão em sua fase inativa(morta). No momento em que o nosso organismo percebe esses vírus ou bactérias, nosso sistema imunológico(defesa) entra em ação e logo reage com o objetivo de parar o ato desses indivíduos desconhecidos. A função das vacinas é se passarem por esses agentes infecciosos com o intuito de instigar a produção de nossa defesa, através de anticorpos contra o "opositor". Assim, o nosso organismo aprende a se defender de forma ativa</p>
+                    <p>Quando o ataque acontece de verdade, a defesa é ativada por meio do nosso sistema imunológico. E assim faz com que os anticorpos combatam a doença para ser eliminada de vez ou muito limitada, impedindo que a doença se instaure.</p>
+                </div>
+            
+                <button id="btn_vacinas">Linha do tempo</button>
+
 				
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<!-- <div class="linha"></div>
-				<div class="linha" id="linha-maior"></div> -->
-				<!-- <div class="linha"></div>
-				<div class="linha" id="linha-maior"></div>
-				<div class="linha"></div>
-				<div class="linha" id="linha-maior"></div> -->
-				<div class="linha"></div>
-			  </div>
-			  
-			  <div class="texto" >
-				<div class="tooltip">1771
-					<span class="tooltiptext">A primeira “vacina” surgiu no século X, na China, ela foi feita para combater a varíola
-					</span>
-				</div>
-				<div class="tooltip">1804
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1927
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1930
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1942
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1955
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1980
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1990
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1995
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">1999
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
-				<div class="tooltip">2021
-					<span class="tooltiptext">Tooltip text</span>
-				</div>
+                
+                
+            </div>
 
-			  </div>
-			</div>
-			
-			<div class="retangulo" id="puxador-1"></div>
-			<div class="retangulo" id="puxador-2"></div>
-			
-		</div>
-				
-		</div>
-	  </div>
-	 
-	  
-		
+        
+        
+        
 
+            
+
+            
+        </div>
+    </section>
+    
+    </div>
+    
+        
 </body>
 </html>
