@@ -1,34 +1,18 @@
-body {
-    background-color: aqua;
-    padding-inline: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-.all {
-background-color: aliceblue;
-display: flex;
-justify-content: flex-end;
-border-radius: 20pt;
-width: 100%;
-height: 100%;
-align-items: flex-end;
-padding: 2%;
 
-}
 .seringa {
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-inline: 10%;
-margin-block: 10pt;
+margin-inline: 3%;
+
 }
 
 .retangulo {
     background-color: #C1CDCD;
     width: 340pt;
     height: 180pt;
+    ;
     /* margin-bottom: 30px; */
 }
 .texto {
@@ -63,8 +47,8 @@ margin-block: 10pt;
 }
 #tubo {
     border-radius: 25pt;
-    width: 55pt;
-    height: 280pt;
+    width: 50pt;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -75,6 +59,8 @@ margin-block: 10pt;
     justify-content: center;
     padding: 10pt;
     gap: 10pt;
+    display: flex;
+    flex-direction: column
 }
 
 #agulha {
