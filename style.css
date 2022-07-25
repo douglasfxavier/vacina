@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    color: #363636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+}
+
+.texto {
+    color: #141414;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-inline: 7%;
+
+}
+
+body, 
+.container .line {
+    background: #40E0D0;
+}
+.container {
+    background: #fcfcfd;
+    width: 95vw;
+    height: 90vh;
+    margin: 10pt;
+    padding: 0.5%;
+    border-radius: 15pt;
+
+
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+.section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    overflow: auto;
+  
+}
+.section-main {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10%;
+    justify-content: flex-end;
+    overflow: scroll;
+    margin-top: 10%;
+
+
+}
+.header  {
+
+    margin: 0;
+
+}
+.texto {
+    overflow: auto;
+}
+
+#btn_vacinas {
+    margin: 15pt;
+    border-color: #40E0D0;
+    border-style: solid;
+    border-width: 2pt;
+    background-color: transparent;
+    border-radius: 15pt;
+    padding: 6pt;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#texto-vacinas{
+    display: none;
+    
+}
+.textos {
+    margin-inline: 15pt;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.btn_vacina {
+    background-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    padding: 3pt;
+}
+
+
+.seringa {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-inline: 3%;
+
+}
+
+.retangulo {
+    background-color: #C1CDCD;
+    width: 340pt;
+    height: 180pt;
+    ;
+    /* margin-bottom: 30px; */
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    margin-inline-end: 8pt;
+    gap: 10pt;
+
+}
+.linhas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: 8pt;
+    gap: 15pt;
+    /* writing-mode: vertical-rl; */
+}
+.linha {
+    height: 2px;
+    width: 30px;
+    background-color: black;
+}
+
+.conteudo {
+    margin: 10%;
+    margin-bottom: 15%;
+}
+#linha-maior {
+    height: 2px;
+    width: 40px;
+    background-color: black;
+}
+#tubo {
+    border-radius: 25pt;
+    width: 50pt;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #40E0D0;
+    border-width: 10pt;
+    border-style: solid;
+    border-color: #C1CDCD;
+    justify-content: center;
+    padding: 10pt;
+    gap: 10pt;
+    display: flex;
+    flex-direction: column
+}
+
+#agulha {
+    width: 10pt;
+    height: 60pt;
+    border-top-right-radius: 40pt;
+}
+#puxador-1 {
+    height: 30pt;
+    width: 15pt;   
+}
+#puxador-2 {
+    width: 60pt;
+    height: 10pt;
+    border-radius: 40pt;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
